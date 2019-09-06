@@ -20,6 +20,38 @@ app.get('/form', (request, response) => {
     response.render('form');
 });
 
+app.get('/cat1', (request, response) => {
+    
+    var cat_data = {
+        'name': 'Mat the Cat',
+        'skill': 'Push the Cart'
+    }
+
+    response.render('cat1', {cat_data: cat_data});
+});
+
+app.get('/cat2', (request, response) => {
+
+    var cat_data = {
+        'name': 'Jat the Cat',
+        'skill': 'Push the Cart'
+    }
+
+    response.render('cat2', {cat_data: cat_data});
+
+});
+
+app.get('/cat3', (request, response) => {
+
+    var cat_data = {
+        'name': 'Pat the Cat',
+        'skill': 'Push the Cart'
+    }
+
+    response.render('cat3', {cat_data: cat_data});
+
+});
+
 app.use(express.static(__dirname + "/static"));
 
 app.listen(50, ()=> console.log("I'm listening on port 50"));
