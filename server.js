@@ -24,7 +24,8 @@ app.get('/cat1', (request, response) => {
     
     var cat_data = {
         'name': 'Mat the Cat',
-        'skill': 'Push the Cart'
+        'skill': 'Push the Cart',
+        'friends': ['jon the prawn', 'bid the kid', 'rupper the pupper'],
     }
 
     response.render('cat1', {cat_data: cat_data});
@@ -34,7 +35,8 @@ app.get('/cat2', (request, response) => {
 
     var cat_data = {
         'name': 'Jat the Cat',
-        'skill': 'Push the Cart'
+        'skill': 'Push the Cart',
+        'friends': ['jon the prawn', 'bid the kid', 'rupper the pupper'],
     }
 
     response.render('cat2', {cat_data: cat_data});
@@ -45,7 +47,8 @@ app.get('/cat3', (request, response) => {
 
     var cat_data = {
         'name': 'Pat the Cat',
-        'skill': 'Push the Cart'
+        'skill': 'Push the Cart',
+        'friends': ['jon the prawn', 'bid the kid', 'rupper the pupper'],
     }
 
     response.render('cat3', {cat_data: cat_data});

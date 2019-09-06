@@ -14,5 +14,9 @@
     <h3> Name: <%= cat_data.name %> </h3>
     <h4> Skill: <%= cat_data.skill %> </h4>
 
+    <% for (var friends of cat_data.friends) { %>
+        <p> <%= friends %> </p>
+    <% } %>
+
 </body>
 </html>
